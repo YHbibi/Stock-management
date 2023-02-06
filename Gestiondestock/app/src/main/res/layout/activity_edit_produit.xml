@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".EditProduit">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="364dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:enabled="false"
+        android:text="Modifier produit"
+        android:drawableLeft="@drawable/ic_update"
+        android:drawablePadding="20dp"
+        android:textColor="#1000FF"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="32dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="id"
+        android:id="@+id/id"
+        android:enabled="false"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="nom"
+        android:id="@+id/nom"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="couleur"
+        android:id="@+id/couleur"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="categorie"
+        android:id="@+id/categorie"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="fournisseur"
+        android:id="@+id/fournisseur"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="prixU"
+        android:id="@+id/prixU"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="qte"
+        android:id="@+id/qte"
+        android:textColor="@android:color/black"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifier"
+            android:id="@+id/modifier_btn"
+            android:layout_marginTop="23dp"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:id="@+id/pb"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:id="@+id/container"
+        android:layout_above="@id/bottom_navigation"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bottom_navigation"
+        app:menu="@menu/bottom_nav_menu"
+        />
+
+
+</LinearLayout>

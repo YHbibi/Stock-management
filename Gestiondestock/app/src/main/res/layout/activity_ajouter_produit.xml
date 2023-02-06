@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".AjouterProduitActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un produit au stocke"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"/>
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:id="@+id/nom"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Couleur"
+        android:id="@+id/couleur"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Categorie"
+        android:id="@+id/categorie"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Fournisseur"
+        android:id="@+id/fournisseur"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Prix Unitaire"
+        android:id="@+id/prixU"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Quantite"
+        android:id="@+id/qte"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Ajouter"
+        android:layout_marginTop="30dp"
+        android:id="@+id/ajouter_btn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liste Produits"
+        android:id="@+id/listProduits"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:id="@+id/container"
+        android:layout_above="@id/bottom_navigation"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bottom_navigation"
+        app:menu="@menu/bottom_nav_menu"
+        />
+
+
+</LinearLayout>
